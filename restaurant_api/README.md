@@ -13,3 +13,6 @@
 - Crawling Results store in to DB
 > store crawling results automatically into database -> we will use this feature
   https://kbs4674.tistory.com/87?category=822778
+
+- Whenever crontab usage
+  https://kbs4674.tistory.com/84
