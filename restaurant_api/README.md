@@ -1,24 +1,10 @@
-# README
+# README for Guide Ruby
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Rails Basic
+  https://rubykr.github.io/rails_guides/getting_started.html
 
-Things you may want to cover:
+- Rails API Version Control
+  https://codeburst.io/how-to-build-a-good-api-using-rubyonrails-ef7eadfa3078
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Simple Crawler Using nokogiri
+  https://hanjungv.github.io/2017-02-21-1_ROR_usingNokogiri/
