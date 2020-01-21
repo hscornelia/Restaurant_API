@@ -45,3 +45,12 @@
 - version controller added (current version : v1)
 
 url : http://localhost:3000/api/v1
+
+
+## REST API Specification
+
+| URL        | method   | request                           | response     | description            |
+| ---------- | -------- | --------------------------------- | ------------ | ---------------------- |
+| /restaurants    | `GET`    | .                                 | list of restaurants | Get list of all restaurants     |
+
+> HttpError code는 convention과 같습니다.
