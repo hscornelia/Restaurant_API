@@ -54,5 +54,6 @@ url : http://localhost:3000/api/v1
 | /restaurants    | `GET`    | .                                 | list of restaurants | Get list of all restaurants     |
 | /categories    | `GET`    | .                                 | list of categories | Get list of all categories     |
 | /pricerange    | `GET`    | .                                 | list of price range | Get list of all price range     |
+| /location    | `GET`    | .                                 | list of price range | Get list of all location     |
 
 > HttpError code는 convention과 같습니다.
