@@ -26,10 +26,12 @@ ActiveRecord::Schema.define(version: 2020_01_23_085233) do
   create_table "priceranges", force: :cascade do |t|
     t.integer "minimum"
     t.integer "maximum"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
-
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
