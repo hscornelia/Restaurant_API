@@ -7,3 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Sample.create(title: 'hello world', context: 'this is the first response you need to modify here')
+
+#Category.create(type: 'hello world', description: 'Hello!1')
+
+Restaurant.create(name: 'egg_tfdsfshumb', address: 'dobongku', cat_id: 1, rate_id: 1, price_id: 1, loc_id: 1)
+
+Restaurant.create(name: 'egg_thumb', address: 'dobongku', cat_id: 1, rate_id: 1, price_id: 1, loc_id: 1)
