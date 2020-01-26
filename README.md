@@ -9,6 +9,10 @@
 - need to create database name "restaurant_api_development"
 > check database.yml file 
 
+- bundle install (install gemfile dependency)
+
+- rails s 
+
 ### Guide for Development
 
 - for tutorials & guide urls, check README in restaurant-api/README.md
