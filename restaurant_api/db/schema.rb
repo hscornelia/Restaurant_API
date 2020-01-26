@@ -12,10 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2020_01_23_085233) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
 
   create_table "categories", force: :cascade do |t|
     t.string "category_name"
@@ -23,15 +21,15 @@ ActiveRecord::Schema.define(version: 2020_01_23_085233) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "priceranges", force: :cascade do |t|
-    t.integer "minimum"
-    t.integer "maximum"
+  create_table "locations", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "locations", force: :cascade do |t|
-    t.string "name"
+  create_table "priceranges", force: :cascade do |t|
+    t.integer "minimum"
+    t.integer "maximum"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

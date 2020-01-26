@@ -9,6 +9,8 @@
 - need to create database name "restaurant_api_development"
 > check database.yml file 
 
+- rails db:migrate
+
 - bundle install (install gemfile dependency)
 
 - rails s 
