@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       
       resources :samples
+      resources :restaurants
       resources :locations
       resources :priceranges
       resources :categories
