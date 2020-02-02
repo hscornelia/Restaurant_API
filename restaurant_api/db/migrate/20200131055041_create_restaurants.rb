@@ -9,9 +9,9 @@ class CreateRestaurants < ActiveRecord::Migration[6.0]
       t.references :location, null: false, foreign_key: true
       t.references :category, null: false, foreign_key: true
       t.references :pricerange, null: false, foreign_key: true
-      t.references :point, null: false, foreign_key: true
-      t.references :picture, null: false, foreign_key: true
-      t.references :tag, null: false, foreign_key: true
+      # t.references :point, null: false, foreign_key: true
+      # t.references :picture, null: false, foreign_key: true
+      # t.references :tag, null: false, foreign_key: true
 
       t.timestamps
     end
