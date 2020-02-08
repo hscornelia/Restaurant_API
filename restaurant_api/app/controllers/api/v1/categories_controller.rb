@@ -18,11 +18,7 @@ class Api::V1::CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
-<<<<<<< HEAD
       render json: @category, status: :created, location: api_v1_categories_url(@category)
-=======
-      render json: @category, status: :created, location: @category
->>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     else
       render json: @category.errors, status: :unprocessable_entity
     end
@@ -45,19 +41,12 @@ class Api::V1::CategoriesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_category
-<<<<<<< HEAD
       @category = Category.find(params[:id])
-=======
-      @category = Restaurant.find(params[:cat_id])
->>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
+
     end
 
     # Only allow a trusted parameter "white list" through.
     def category_params
-<<<<<<< HEAD
       params.require(:category).permit(:category_name)
-=======
-      params.require(:category).permit(:type, :description)
->>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     end
 end
