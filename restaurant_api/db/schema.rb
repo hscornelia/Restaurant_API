@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_02_02_063740) do
+=======
+ActiveRecord::Schema.define(version: 2020_02_02_074209) do
+>>>>>>> upstream/master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +49,10 @@ ActiveRecord::Schema.define(version: 2020_02_02_063740) do
     t.string "pricerange"
     t.string "category"
     t.float "point"
+<<<<<<< HEAD
+=======
+    t.index ["name"], name: "index_restaurants_on_name", unique: true
+>>>>>>> upstream/master
   end
 
   create_table "sample_crawling_restaurants", force: :cascade do |t|
