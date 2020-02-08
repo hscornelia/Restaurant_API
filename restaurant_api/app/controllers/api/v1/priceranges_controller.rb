@@ -18,7 +18,11 @@ class Api::V1::PricerangesController < ApplicationController
     @pricerange = Pricerange.new(pricerange_params)
 
     if @pricerange.save
+<<<<<<< HEAD
       render json: @pricerange, status: :created, location: api_v1_Priceranges_url(@pricerange)
+=======
+      render json: @pricerange, status: :created, location: @pricerange
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     else
       render json: @pricerange.errors, status: :unprocessable_entity
     end
@@ -41,11 +45,19 @@ class Api::V1::PricerangesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pricerange
+<<<<<<< HEAD
       @pricerange = Pricerange.find(params[:id])
+=======
+      @pricerange = Restaurant.find(params[:price_id])
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     end
 
     # Only allow a trusted parameter "white list" through.
     def pricerange_params
+<<<<<<< HEAD
       params.require(:pricerange).permit(:minimum, :maximum)
+=======
+      params.require(:pricerange).permit(:range, :description)
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     end
 end

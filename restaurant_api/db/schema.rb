@@ -11,33 +11,53 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_02_02_063740) do
 =======
 ActiveRecord::Schema.define(version: 2020_02_02_074209) do
 >>>>>>> upstream/master
+=======
+ActiveRecord::Schema.define(version: 2020_01_24_013359) do
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
+<<<<<<< HEAD
     t.string "category_name"
+=======
+    t.string "type"
+    t.text "description"
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "locations", force: :cascade do |t|
+<<<<<<< HEAD
     t.string "name"
+=======
+    t.string "place"
+    t.text "description"
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "priceranges", force: :cascade do |t|
+<<<<<<< HEAD
     t.integer "minimum"
     t.integer "maximum"
+=======
+    t.string "range"
+    t.text "description"
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+<<<<<<< HEAD
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.string "address"
@@ -59,6 +79,22 @@ ActiveRecord::Schema.define(version: 2020_02_02_074209) do
     t.string "title"
     t.string "point"
     t.string "address"
+=======
+  create_table "rates", force: :cascade do |t|
+    t.integer "score"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name"
+    t.text "address"
+    t.integer "cat_id"
+    t.integer "rate_id"
+    t.integer "price_id"
+    t.integer "loc_id"
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

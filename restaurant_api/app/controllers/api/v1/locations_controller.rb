@@ -41,11 +41,19 @@ class Api::V1::LocationsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_location
+<<<<<<< HEAD
       @location = Location.find(params[:id])
+=======
+      @location = Restaurant.find(params[:loc_id])
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     end
 
     # Only allow a trusted parameter "white list" through.
     def location_params
+<<<<<<< HEAD
       params.require(:location).permit(:name)
+=======
+      params.require(:location).permit(:place, :description)
+>>>>>>> d6148530d1e5d1d12362cd27d2b362cc350a0ec9
     end
 end
